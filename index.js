@@ -46570,20 +46570,31 @@ const musicContainer = document.getElementById("music-container");
 
 const musicInfo = (music) => {
   const musicDiv = document.createElement("div");
+  musicDiv.style.padding = "20px 0px 0px 0px";
+
   musicDiv.classList.add("music");
 
   // Create a paragraph element for the music artist
   const artistParagraph = document.createElement("h3");
-  artistParagraph.textContent = `Artist: ${music.TACGIA}`;
+  artistParagraph.textContent = `${music.TACGIA}`;
+  artistParagraph.style.cssText = "font-size: 20px; color: #7AC36F;"
   musicDiv.appendChild(artistParagraph);
 
   // Create a heading element for the music title
   const titleHeading = document.createElement("h3");
-  titleHeading.textContent = `${music.TENBH} [${music.MABH}]`;
+  titleHeading.textContent = `${music.TENBH}`;
+  titleHeading.style.cssText = "font-size: 16px; color: #F6F7F6; font-weight: 600;"
   musicDiv.appendChild(titleHeading);
 
-  const separator = document.createElement("p");
-  separator.textContent = `----------------------------`;
+    // Create a heading element for the music code
+  const codeParagraph = document.createElement("h3");
+  codeParagraph.textContent = `[${music.MABH}]`;
+  codeParagraph.style.cssText = "font-size: 16px; color: #F6F7F6; font-weight: 300;"
+  musicDiv.appendChild(codeParagraph);
+
+
+  const separator = document.createElement("hr");
+  separator.style.margin = "10px 0px 0px 0px"
   musicDiv.appendChild(separator);
 
   // Append the music div to the container element

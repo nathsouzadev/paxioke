@@ -1,5 +1,9 @@
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
 body {
-  background: linear-gradient(to bottom, green, black);
+  background: #181B18;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,7 +12,9 @@ body {
 
 h1 {
   font-size: 24px;
-  color: white;
+  color: #5BB54C;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 500;
 }
 
 input {
@@ -17,7 +23,9 @@ input {
   padding: 10px;
   margin: 10px;
   font-size: 16px;
+  
 }
+
 
 #music-container {
   width: 80%;
@@ -27,11 +35,15 @@ input {
   border-radius: 5px;
 }
 
-h3,
-p {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  color: gray;
+hr,
+h3 {
+  margin: 8px;
+}
+
+
+
+.artistParagraph{
+  color: red;
 }
 
 @media (max-width: 600px) {
