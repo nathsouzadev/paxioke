@@ -46574,22 +46574,22 @@ const musicInfo = (music) => {
 
   musicDiv.classList.add("music");
 
-  // Create a paragraph element for the music artist
-  const artistParagraph = document.createElement("h3");
-  artistParagraph.textContent = `${music.TACGIA}`;
-  artistParagraph.style.cssText = "font-size: 20px; color: #7AC36F;"
-  musicDiv.appendChild(artistParagraph);
-
   // Create a heading element for the music title
   const titleHeading = document.createElement("h3");
   titleHeading.textContent = `${music.TENBH}`;
-  titleHeading.style.cssText = "font-size: 16px; color: #F6F7F6; font-weight: 600;"
+  titleHeading.style.cssText = "font-size: 18px; color: #7AC36F; font-weight: 600;"
   musicDiv.appendChild(titleHeading);
+
+    // Create a paragraph element for the music artist
+  const artistParagraph = document.createElement("h3");
+  artistParagraph.textContent = `${music.TACGIA}`;
+  artistParagraph.style.cssText = "font-size: 16px; color: #F6F7F6; font-weight: 400;"
+  musicDiv.appendChild(artistParagraph);
 
     // Create a heading element for the music code
   const codeParagraph = document.createElement("h3");
   codeParagraph.textContent = `[${music.MABH}]`;
-  codeParagraph.style.cssText = "font-size: 16px; color: #F6F7F6; font-weight: 300;"
+  codeParagraph.style.cssText = "font-size: 16px; color: #C6CBC4; font-weight: 400;"
   musicDiv.appendChild(codeParagraph);
 
 
